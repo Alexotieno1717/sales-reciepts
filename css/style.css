@@ -49,3 +49,9 @@ body{
     text-decoration: line-through;
     color: red;
 }
+
+#phone-accesory{
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
