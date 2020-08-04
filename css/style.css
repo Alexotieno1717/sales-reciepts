@@ -42,3 +42,10 @@ body{
     padding-top: 12%;
     padding-left: 15%;
 }
+/* End Banner */
+
+/* Phone Accessories */
+.text-stkike-through{
+    text-decoration: line-through;
+    color: red;
+}
