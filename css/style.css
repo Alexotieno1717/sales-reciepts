@@ -61,6 +61,8 @@ body{
     padding: 20px;
 }
 
+
+/* Fa Fa-Icons */
 .fa-facebook,
 .fa-github,
 .fa-twitter,
@@ -76,4 +78,12 @@ body{
 .fa-youtube:hover{
     background: black;
     color: white;
+}
+.fa-shopping-cart{
+    padding-top: 10px;
+    /* position: relative; */
+}
+.badge-secondary{
+    /* position: absolute; */
+    /* right: 10px; */
 }
