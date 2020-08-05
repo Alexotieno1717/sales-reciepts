@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+}
+
+.navbar-custom{
+    box-shadow: 1px 1px 1px gray;
+}
+
+/* Carousel image */
+#carousel-img-1{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .2)), url(../images/phone1.jpg);
+    width: 100%;
+    height: 70vh;
+}
+#carousel-img-2{
+    background: url(../images/phone2.webp)no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+#carousel-img-3{
+    background: url(../images/phone3.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+.banner-cont-1{
+    padding-top: 10%;
+    padding-left: 15%;
+}
+
+.banner-cont-2{
+    text-align: right;
+    padding-top: 10%;
+    padding-right: 15%;
+}
+
+.banner-cont-3{
+    padding-top: 12%;
+    padding-left: 15%;
+}
+/* End Banner */
+
+/* Phone Accessories */
+.text-stkike-through{
+    text-decoration: line-through;
+    color: red;
+}
+
+#phone-accesory{
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+/* Footer */
+#footer{
+    padding: 20px;
+}
+
+
+/* Fa Fa-Icons */
+.fa-facebook,
+.fa-github,
+.fa-twitter,
+.fa-youtube{
+    border: 1px solid black;
+    padding: 10px;
+    transition: 1s;
+}
+.fa-facebook:hover,
+.fa-facebook:hover,
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-youtube:hover{
+    background: black;
+    color: white;
+}

@@ -3,9 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Receipt</title>
+    <title>Sales Receipt website</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom css Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font-Awesome Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sales Receipt</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#phone-accesory">Phone Accesories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mobile-phone">Mobile Phone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tablet">Tablet</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End container -->
+    </nav>
+    <!-- End navigation -->
+
+    <div class="container pt-2" id="banner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div id="carousel-img-1" class="carousel-item active">
+                <div class="banner-title">
+                    <div class="banner-cont-1 text-light">
+                        <h4>Welcome to our Online store</h4>
+                        <p>Search for great phone with great <br> features at affordable price</p>
+                    </div>
+                </div>
+              </div>
+              <div id="carousel-img-2" class="carousel-item">
+                <div class="banner-title">
+                    <div class="banner-cont-2 text-light">
+                        <h2>Mobile Week 2020</h2>
+                        <p>Get your phone and delivered <br> at your door steps</p>
+                    </div>
+                </div>
+              </div>
+              <div id="carousel-img-3" class="carousel-item">
+                <div class="banner-title">
+                    <div class="banner-cont-3 text-light">
+                        <h2>Phone with great features</h2>
+                        <p>On your first choice</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container" id="phone-accesory">
+        <div class="row">
+            <div class="col-md-12 pt-3 text-center">
+                <h2>Mobile Phone Accesories</h2>
+            </div>
+            <div class="col-md-3">
+                <div class="phone-back">
+                    <img class="w-75 img-fluid img-thumbnail ml-3" src="images/1.jpg" alt="Ear Phones">
+                    <p class="ml-3">Otg Adapter and Selfi Stick <br> Ksh 3, 499 <br> <span class="text-stkike-through">Ksh 4, 499</span></p>
+                    <div class="rating-stars text-warning pl-3">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button class="btn btn-warning text-uppercase ml-3">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="phone-back">
+                    <img class="w-75 img-fluid img-thumbnail ml-4" src="images/2.jpg" alt="Ear Phones">
+                    <p class="ml-4">Bluetooth Earphone <br> Ksh 3, 499 <br> <span class="text-stkike-through">Ksh 4, 499</span></p>
+                    <div class="rating-stars text-warning pl-3">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button class="btn btn-warning text-uppercase ml-4">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="phone-back">
+                    <img class="w-75 img-fluid img-thumbnail ml-4" src="images/3.jpg" alt="Ear Phones">
+                    <p class="ml-4">Headphones <br> Ksh 1, 499 <br> <span class="text-stkike-through">Ksh 2, 499</span></p>
+                    <div class="rating-stars text-warning pl-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <button class="btn btn-warning text-uppercase ml-4">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="phone-back">
+                    <img class="w-75 img-fluid img-thumbnail ml-4" src="images/4.jpg" alt="Ear Phones">
+                    <p class="ml-4">Bluetooth Earphone <br> Ksh 350 <br> <span class="text-stkike-through">Ksh 500</span></p>
+                    <div class="rating-stars text-warning pl-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <button class="btn btn-warning text-uppercase ml-4">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Phone Accessory -->
+
+    <div class="container" id="mobile-phone">
+        <div class="row">
+            <div class="col-md-12 pt-4 text-center">
+                <h2>Mobile Phone</h2>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-thumbnail" src="images/5.jpg" alt="phone" class="img-fluid">
+                <p>Ulephone, 16GB + 2GB RAM(Dual SIM), 2700m Ah <br>Ksh 6, 499 <br><span class="text-stkike-through">Ksh 7, 499</span></p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-fluid img-thumbnail" src="images/6.jpg" alt="phone" class="img-fluid">
+                <p>Nokia, 64GB + 2GB RAM(Dual SIM), 2700m Ah <br>Ksh 16, 499 <br><span class="text-stkike-through">Ksh 23, 499</span></p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-fluid img-thumbnail" src="images/7.jpg" alt="phone" class="img-fluid">
+                <p>Bontel Bontel - Black, <br> Dual SIM <br>Ksh 3, 499 <br><span class="text-stkike-through">Ksh 4, 000</span></p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-fluid img-thumbnail" src="images/9.jpg" alt="phone" class="img-fluid">
+                <p>Tecno, 16GB + 2GB RAM (Dual SIM), 2700m Ah <br>Ksh 6, 499 <br><span class="text-stkike-through">Ksh 2, 499</span></p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Phones -->
+
+    <div class="container" id="tablet">
+        <div class="row">
+            <div class="col-md-12 pt-4 text-center">
+                <h2>Tablets</h2>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-thumbnail img-fluid" src="images/10.jpg" alt="Tablet">
+                <p>Samsung Galaxy Tab 2GB RAM + 32GB  <br>Ksh 17, 499 <br><span class="text-stkike-through">Ksh 25, 499</p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-thumbnail img-fluid" src="images/11.jpg" alt="Tablet">
+                <p>X Tigi Tablet 1GB RAM + 16GB  <br>Ksh 6, 499 <br><span class="text-stkike-through">Ksh 9, 499</p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-thumbnail img-fluid" src="images/12.jpg" alt="Tablet">
+                <p>Samsung Galaxy Tab A 2GB RAM + 32GB  <br>Ksh 17, 499 <br><span class="text-stkike-through">Ksh 25, 499</p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+            <div class="col-md-3">
+                <img class="w-100 img-thumbnail img-fluid" src="images/13.jpg" alt="Tablet">
+                <p>Lenovo Tab 1GB RAM + 16GB  <br>Ksh 14, 499 <br><span class="text-stkike-through">Ksh 17, 000</p>
+                <div class="rating-stars text-warning">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <button class="btn btn-warning text-uppercase">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Tablets -->
+
+    <!-- Cart && Checkout -->
+    <div class="container" id="cart">
+        <div class="row">
+            <div class="col-md-12 pt-5 text-center">
+                <h2>Add to Cart</h2>
+            </div>
+            <div class="col-md-3">
+                <h5>Item number</h5>
+                <div id="number">
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Description</h3>
+                <div id="description">
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Price</h3>
+                <div id="price">
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Clear</h3>
+                <div id="clear">
+                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="col-md-12 text-center text-uppercase">
+                <button class="btn btn-warning">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4 pt-4 text-center bg-light" id="footer">
+        <div class="container">
+            <div class="icon-media">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+            <p>Copyright &copy; 2020 | Sales Receipt Website</p>
+        </div>
+    </div>
+
+<!-- Jquery Link -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
