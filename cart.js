@@ -4,6 +4,15 @@
 //     ready()
 // }
 
+//clear cart items
+var clearButton = document.getElementById("clear-button")
+clearButton.addEventListener("click", clearCart)
+function clearCart()
+{
+    document.getElementById("cart-items").innerHTML = ""
+    document.getElementsByClassName("cart-total-price")[0].innerText = "Ksh " + 0
+}
+
 var addToCartButtons = document.getElementsByClassName("btn-warning")
 for (var i = 0; i < addToCartButtons.length; i ++) {
     var button = addToCartButtons[i]
@@ -28,8 +37,8 @@ function addToCartClicked(event) {
 }
 
 function addItemToCart(title, price) {
-    var cartRow = document.createElement("div")
-    cartRow.classList.add("cart-row")
+
+
     var cartItems = document.getElementsByClassName("cart-items")[0]
     var cartItemNames = cartItems.getElementsByClassName("cart-item-title")
     console.log(cartItemNames)
@@ -40,22 +49,28 @@ function addItemToCart(title, price) {
             return
         }
     }
-    var cartRowContents = ` 
-    <div class="row mt-3">
-        <div class="col-md-6">
-            <h6 class="cart-item-title"">${title}</h6>
-        </div>
-        <div class="col-md-3">
-            <span class="cart-price cart-column">${price}</span>
-        </div>
-        <div class="col-md-3 cart-quantity cart-column">
+
+    var btn = document.createElement('button')
+    var cartRowContents = `
+    <tr class="rowcart cart-row">
+        <td class="cart-item-title" scope="col">${title}</td>
+        <td class="cart-price cart-column" scope="col">${price}</td>
+        <td>
             <input class="cart-quantity-input" type="number" value="1">
+
             <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>
-    </div>`
-    cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+        </td
+    </tr>
+    `
+
+    cartRow = document.getElementById("cart-items")
+    cartRow.innerHTML += cartRowContents
+    cartRow.addEventListener('click', (e) =>{
+        const isBtn = e.target.nodeName === 'BUTTON'
+        if(!isBtn) return;
+
+        removeCartItem(e)
+    })
 }
 
 
@@ -63,7 +78,8 @@ function addItemToCart(title, price) {
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName("cart-items")[0]
     var cart = cartItemContainer.getElementsByClassName("cart-row")
-    var cartRows = cartItemContainer.getElementsByClassName("row")
+
+    var cartRows = cartItemContainer.getElementsByClassName("rowcart")
     var total = 0
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
