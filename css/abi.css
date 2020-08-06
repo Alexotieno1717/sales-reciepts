@@ -1,0 +1,81 @@
+.container{
+     position: absolute;
+     width: 771px;
+     height: 693px;
+     background: #C4C4C4;
+     margin: 10%;
+}
+.daily-sales{
+     position: absolute;
+     width: 771px;
+     height: 68px;
+     background: #F54242;
+}
+.box{
+     position: absolute;
+     width: 650px;
+     height: 480px;
+     margin-right: 10%;
+     margin-left: 10%;
+     margin-top: 5%;
+     background: #918484;
+}
+.footer{
+     position: absolute;
+     width: 771px;
+     height: 50px;
+     background: #C41818;
+     margin-top:593px;
+}
+.item{
+     margin: 0px;
+     position: absolute;
+     width: 169px;
+     height: 53px;
+     background: #61BCD9;
+     transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.quantity{
+     margin-left: 169px;
+     position: absolute;
+     width: 144px;
+     height: 53px;
+    background: #D1F7FF;
+}
+.total-amount{
+     margin-left:311px;
+     position: absolute;
+     width: 137px;
+     height: 53px;
+     background: #3EFEFE;
+
+}
+.box1{
+     margin: 0px;
+     position: absolute;
+     width: 169px;
+     height: 364px;
+     background: #68D5D5;
+}
+.box2{
+     margin-left: 169px;
+     position: absolute;
+     width: 142px;
+     height: 364px; 
+     background: #4AADBA;
+}
+.box3{
+     margin-left: 311px;
+     position: absolute;
+     width: 137px;
+     height: 364px;
+     background: #7AC8CD
+}
+.clear-all{
+     margin-left: 480px;
+     margin-top: 380px;
+     position: absolute;
+     width: 100px;
+     height: 47px;
+     background: #C4C4C4;
+}
