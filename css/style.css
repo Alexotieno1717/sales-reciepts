@@ -3,6 +3,7 @@ body{
     padding: 0;
     width: 100%;
     background: white;
+    scroll-behavior: smooth;
 }
 
 .navbar-custom{
